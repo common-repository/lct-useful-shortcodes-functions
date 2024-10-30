@@ -1,0 +1,18 @@
+#!/bin/sh
+if [ "$3" = 1 ]; then
+branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
+
+if [ "master" = "$branch" ]; then
+php "x/lc-content/plugins/lct-useful-shortcodes-functions/code/admin/direct/git_post-checkout.php"
+fi
+
+if [ "new" = "$branch" ]; then
+php "x/lc-content/plugins/lct-useful-shortcodes-functions/code/admin/direct/git_post-checkout.php"
+fi
+
+echo Ran lct\git_post-checkout.php
+else
+echo Just reverting or something lame no need to take action.
+fi
+
+echo [LOCAL] post-checkout V7.4 IS SET

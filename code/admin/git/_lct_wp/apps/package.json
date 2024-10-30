@@ -1,0 +1,22 @@
+{
+	"name": "apps_v8.2",
+	"description": "apps_v8.2",
+	"repository": "apps_v8.2",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {},
+	"devDependencies": {
+		"browser-sync": "^2",
+		"del": "^5",
+		"gulp": "^4",
+		"gulp-autoprefixer": "^7",
+		"gulp-plumber": "^1",
+		"gulp-rename": "^2",
+		"gulp-sass": "^4",
+		"gulp-uglify": "^3"
+	}
+}

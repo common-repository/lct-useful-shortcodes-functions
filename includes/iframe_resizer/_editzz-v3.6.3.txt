@@ -1,0 +1,32 @@
+<?php /*
+Plugin Name: iFrame Resizer
+Plugin URI: https://github.com/davidjbradshaw/iframe-resizer
+Version: 3.6.3
+Author:
+Author URI:
+License: GPL
+Description:
+*/ ?>
+
+
+== Log ==
+== 2018.12.27 ==
+	- Updated to v3.6.3
+	- Removed Files:
+		js/combined.js
+		js/iFrameResize.js
+
+== 2015-04-23 ==
+	updated to v2.8.6
+	Updated Files:
+		js/iFrameResize.js
+		js/combined.js
+
+== 2014-07-23 ==
+	Added to: /{dash}/includes/
+
+== 2014-06-15 ==
+	Added to: /apps/includes/
+	Added Files:
+		js/iFrameResize.js
+		js/combined.js

@@ -1,0 +1,60 @@
+<?php /*
+_editzz Name: Custom WordPress Install  ||  2020.04.27
+URI:
+Version: 8.4RC1
+Author: Cary Smith
+Author URI:
+License: Varies
+Description:
+*/ ?>
+
+
+== Default List of effected files ==
+	v7.2    - /apps/inc/bower.json
+	v7.2    - /apps/inc/composer.json
+	v8.4RC1 - /apps/gulpfile.js
+	v8.2    - /apps/package.json
+	v7.7    - /apps/info.php
+
+
+	v8.2 - /x/wp-config.php [MANUALLY TRACKED, Get a copy of the template in masters repo: .../_masters/WP/wp-config.php]
+
+
+	v8.2 - /.gitignore
+	v8.3 - /.htaccess
+	v4.0    - /robots.txt
+
+
+	v7.4    - [.git hooks] - post-checkout [LOCAL]
+	v5.4    - [.git hooks] - post-receive [REMOTE]
+
+
+== Custom WordPress Install Log ==
+== v8.3 :: 2020.04.27 ==
+	- Updated: /.htaccess
+
+
+<!-- CUSTOM --- CUSTOM --- CUSTOM --- CUSTOM --- CUSTOM --- CUSTOM --- CUSTOM --- CUSTOM --- CUSTOM -->
+== LAST ZZREVIEW CHECK DATE :: 2017.01.28 ==
+
+
+== CUSTOM List of effected directories & files ==
+	NONE
+
+
+<!-- PLUGINS --- PLUGINS --- PLUGINS --- PLUGINS --- PLUGINS --- PLUGINS --- PLUGINS --- PLUGINS -->
+
+
+<!-- example v  ||  Last Checked: 2017.01.01 -->
+
+
+<!-- THEMES --- THEMES --- THEMES --- THEMES --- THEMES --- THEMES --- THEMES --- THEMES --- THEMES -->
+
+
+<!-- a :: child to "Avada"  ||  Last Checked: 2021.02.22 -->
+ADDED
+	/a/*
+
+
+<!-- Avada v7.2.1  ||  Last Checked: 2021.02.22 -->
+NONE

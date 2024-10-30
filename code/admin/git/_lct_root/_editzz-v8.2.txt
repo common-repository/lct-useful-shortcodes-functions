@@ -1,0 +1,35 @@
+<?php /*
+_editzz Name: Custom ROOT Config  ||  2020.02.04
+URI:
+Version: 8.2
+Author: Cary Smith
+Author URI:
+License: Varies
+Description:
+*/ ?>
+
+
+== Default List of effected files ==
+	v4.3.1  - /.bash_profile
+	v4.3.1  - /.bashrc
+	v7.8    - /.gitconfig
+	v8.2    - /.gitignore
+	v8.0    - /.htaccess
+	v7.1    - /php.ini
+
+
+	v7.4    - [.git hooks] - post-commit [LOCAL]
+	v5.4    - [.git hooks] - post-receive [REMOTE]
+
+
+== Custom WordPress Install Log ==
+== v8.2 :: 2020.02.04 ==
+	- Updated: .gitignore
+
+
+<!-- CUSTOM --- CUSTOM --- CUSTOM --- CUSTOM --- CUSTOM --- CUSTOM --- CUSTOM --- CUSTOM --- CUSTOM -->
+== LAST ZZREVIEW CHECK DATE :: 2017.01.28 ==
+
+
+== CUSTOM List of effected directories & files ==
+	NONE

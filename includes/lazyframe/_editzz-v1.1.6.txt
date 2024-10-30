@@ -1,0 +1,14 @@
+<?php /*
+Plugin Name: lazyframe
+Plugin URI: https://github.com/vb/lazyframe
+Version: 1.1.6
+Author:
+Author URI:
+License: GPL
+Description:
+*/ ?>
+
+
+== Log ==
+== 2019.04.22 ==
+	- Updated to v1.1.6

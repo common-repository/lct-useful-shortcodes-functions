@@ -1,0 +1,4 @@
+#!/bin/sh
+php "../../x/lc-content/plugins/lct-useful-shortcodes-functions/code/admin/direct/git___root_post-commit.php"
+
+echo [LOCAL] post-commit V7.4 IS SET

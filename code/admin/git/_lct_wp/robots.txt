@@ -1,0 +1,24 @@
+##
+## _editzz Name: /robots.txt
+## URI:
+## Version: 4.0
+## Author: Cary Smith
+## Author URI:
+## License: GPLv3 or higher
+## Description:
+
+
+User-agent: *
+Disallow: /addons/
+Disallow: /addons_sub/
+Disallow: /cgi-bin/
+Disallow: /s/
+Disallow: /x/lc-content/uploads/wc-logs/
+Disallow: /x/lc-content/wc-logs/
+Disallow: /x/wc-logs/
+Disallow: /x/wp-admin/
+Disallow: /x/wp-content/uploads/wc-logs/
+Disallow: /x/wp-content/wc-logs/
+Disallow: /zzFiles/
+
+Sitemap: https://www._editzz.com/sitemap_index.xml

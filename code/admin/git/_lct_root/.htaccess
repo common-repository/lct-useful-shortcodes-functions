@@ -1,0 +1,51 @@
+##
+## _editzz Name: .htaccess
+## URI:
+## Version: 8.0
+## Author: Cary Smith
+## Author URI:
+## License: GPLv3 or higher
+## Description:
+
+## Block some evil things
+SetEnvIfNoCase Via pinappleproxy spammer=yes
+
+BrowserMatchNoCase "semalt" spammer=yes
+SetEnvIfNoCase Referer semalt.com spammer=yes
+SetEnvIfNoCase Referer semalt spammer=yes
+
+SetEnvIfNoCase Referer buttons-for-website.com spammer=yes
+
+SetEnvIfNoCase Referer sharebutton.net spammer=yes
+
+Order allow,deny
+Allow from all
+Deny from env=spammer
+## ENDzz :: Block some evil things
+
+<IfModule mod_deflate.c>
+    SetOutputFilter DEFLATE
+    <IfModule mod_setenvif.c>
+        # Netscape 4.x has some problems...
+        BrowserMatch ^Mozilla/4 gzip-only-text/html
+
+        # Netscape 4.06-4.08 have some more problems
+        BrowserMatch ^Mozilla/4\.0[678] no-gzip
+
+        # MSIE masquerades as Netscape, but it is fine
+        # BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+
+        # NOTE: Due to a bug in mod_setenvif up to Apache 2.0.48
+        # the above regex won't work. You can use the following
+        # workaround to get the desired effect:
+        BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+
+        # Don't compress images
+        SetEnvIfNoCase Request_URI .(?:gif|jpe?g|png)$ no-gzip dont-vary
+    </IfModule>
+
+    <IfModule mod_headers.c>
+        # Make sure proxies don't deliver the wrong content
+        Header append Vary User-Agent env=!dont-vary
+    </IfModule>
+</IfModule>

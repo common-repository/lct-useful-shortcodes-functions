@@ -1,0 +1,30 @@
+[user]
+	email = remote@ircary.com
+	name = remote_changes
+[core]
+	quotepath = true
+	autocrlf = false
+	safecrlf = false
+[alias]
+	alias-version = 7.8
+	av = 7.8
+	s = status
+	h = "!f() { export tb=`git branch | grep '* ' | tr -d '* '` && git push a $tb && git status; unset $tb; }; f"
+	hnos = "!f() { export tb=`git branch | grep '* ' | tr -d '* '` && git push a $tb; unset $tb; }; f"
+	hh = push
+	l = !sh -c 'git pull && git status'
+	ll = pull
+	lh = "!f() { export tb=`git branch | grep '* ' | tr -d '* '` && git pull && git push a $tb && git status; unset $tb; }; f"
+	a = add --all
+	c = commit -m
+	cd = commit -m \"...\"
+	cu = commit -m \"Uploads\"
+	cup = commit -m \"UD Plugin\"
+	acu = !sh -c 'git add --all x/lc-content/uploads/ && git commit -m \"Uploads\"'
+	acuh = "!f() { export tb=`git branch | grep '* ' | tr -d '* '` && git add --all x/lc-content/uploads/ && git commit -m \"Uploads\" && git push a $tb && git status; unset $tb; }; f"
+	ca = "!f() { export tb=`git branch | grep '* ' | tr -d '* '` && git add --all && git commit -m \"ZZREVIEW :: possible unauthorized remote changes\" && git push a $tb && git status; unset $tb; }; f"
+	b = branch -a
+	co = checkout
+	com = checkout master
+	bd = branch -d
+	bcl = !sh -c 'git branch -a && git fetch -p a && git branch -a'
